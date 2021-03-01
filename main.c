@@ -3,5 +3,6 @@
 
 int main(void)
 {
-        int res = http_get_example();
+        // prints a bunch of stuff.
+        http_get_example();
 }

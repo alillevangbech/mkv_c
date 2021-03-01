@@ -12,7 +12,7 @@ int http_get_example()
 {
         CURL *curl;
         CURLcode result;
-        char* url = "https://raw.githubusercontent.com/geohot/minikeyvalue/master/tools/kill.sh";
+        char* url = "https://raw.githubusercontent.com/alillevangbech/mkv_c/master/test/get";
 
         curl = curl_easy_init();
         if (curl) {
