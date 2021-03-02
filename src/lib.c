@@ -1,10 +1,8 @@
 
+#include <stddef.h>
 
-const char b64chars[] =
+const char *s =
         "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
-
-
-
 
 
 
