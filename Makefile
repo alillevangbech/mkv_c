@@ -1,7 +1,5 @@
 
 
-
-
 CPPFLAGS = -D_POSIX_C_SOURCE=200809L
 CFLAGS   = -std=c99 -pedantic -Wall -Wextra -Os ${CPPFLAGS}
 LDFLAGS  = -lcurl

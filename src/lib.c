@@ -1,0 +1,10 @@
+
+
+const char b64chars[] =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
+
+
+
+
+
+
