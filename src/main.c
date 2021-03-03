@@ -13,7 +13,7 @@ int main(void)
         char *encoded;
         char hey[] = "I dunno";
         int len = strlen(hey);
-        encoded = malloc( ((len + 2) / 3 * 4) + 1 );
+        encoded = malloc(Base64encode_len(len));
         Base64encode(encoded, hey, len);
         printf("%s \n", encoded);
 

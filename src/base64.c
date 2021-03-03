@@ -169,7 +169,7 @@ int Base64decode(char *bufplain, const char *bufcoded)
 }
 
 static const char basis_64[] =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
 
 int Base64encode_len(int len)
 {
