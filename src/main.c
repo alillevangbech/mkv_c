@@ -5,9 +5,7 @@
 #include "base64.h"
 
 #if defined(__APPLE__)
-#  define COMMON_DIGEST_FOR_OPENSSL
 #  include <CommonCrypto/CommonDigest.h>
-#  define SHA1 CC_SHA1
 #  define MD5 CC_MD5
 #else
 #  include <openssl/md5.h>
