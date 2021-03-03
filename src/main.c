@@ -4,6 +4,16 @@
 #include "network.h"
 #include "base64.h"
 
+#if defined(__APPLE__)
+#  define COMMON_DIGEST_FOR_OPENSSL
+#  include <CommonCrypto/CommonDigest.h>
+#  define SHA1 CC_SHA1
+#  define MD5 CC_MD5
+#else
+#  include <openssl/md5.h>
+#endif
+
+
 int main(void)
 {
         // prints a bunch of stuff.
@@ -16,5 +26,10 @@ int main(void)
         encoded = malloc(Base64encode_len(len));
         Base64encode(encoded, hey, len);
         printf("%s \n", encoded);
+
+        // test md5
+        unsigned char digest[16];
+        MD5(hey, len, digest);
+        printf("%d \n", digest[0]);
 
 }
