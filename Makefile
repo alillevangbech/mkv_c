@@ -3,7 +3,8 @@
 SRC_DIR = ./src
 
 SRC = ${SRC_DIR}/network.c \
-      ${SRC_DIR}/main.c
+      ${SRC_DIR}/main.c \
+      ${SRC_DIR}/base64.c
 
 OBJ = ${SRC:.c=.o}
 
