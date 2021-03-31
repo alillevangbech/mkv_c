@@ -82,10 +82,9 @@
 /* Base64 encoder/decoder. Originally Apache file ap_base64.c
  */
 
-#include <stddef.h>
 #include <string.h>
 
-#include "./crypto.h"
+#include "./base64.h"
 
 
 int Base64decode_len(const char *bufcoded)

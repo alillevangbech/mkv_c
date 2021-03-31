@@ -1,15 +1,16 @@
 .POSIX:
 
-SRC_DIR = ./src
+SRC_DIR  = ./src
+UTIL_DIR = ${SRC_DIR}/utils
 
 SRC = ${SRC_DIR}/network.c \
       ${SRC_DIR}/main.c \
-      ${SRC_DIR}/crypto.c
+      ${UTIL_DIR}/base64.c \
+      ${UTIL_DIR}/md5.c
 
 OBJ = ${SRC:.c=.o}
 
-CPPFLAGS = -D_POSIX_C_SOURCE=200809L
-CFLAGS   = -std=c99 -pedantic -Wall -Wextra -Os ${CPPFLAGS}
+CFLAGS   = -std=c99 -pedantic -Wall -Wextra -Os -D_POSIX_C_SOURCE=200809L
 LDFLAGS  = -lcurl -L/usr/bin/ 
 
 PRG_NAME = mkv_c
