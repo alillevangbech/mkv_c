@@ -1,7 +1,6 @@
 
 # inspiration from:
 https://github.com/geohot/minikeyvalue
-https://quantpie.co.uk/bsm_formula/bs_delta.php
 
 # requires:
         - curl
